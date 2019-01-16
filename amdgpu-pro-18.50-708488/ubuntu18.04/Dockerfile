@@ -7,4 +7,5 @@ RUN curl -LO "https://nexus.cowtownt.org/repository/mining-repo/amdgpu-pro/amdgp
     apt-get install xz-utils && \
     tar -xJvf ./amdgpu-pro-18.50-708488-ubuntu-18.04.tar.xz && \
     ./amdgpu-pro-18.50-708488-ubuntu-18.04/amdgpu-install --headless --opencl=legacy -y && \
+    apt install -y amdgpu-pro && \
     rm -rf amdgpu-pro-18.50-708488-ubuntu-18.04.tar.xz ./amdgpu-pro-18.50-708488-ubuntu-18.04
